@@ -1,8 +1,10 @@
 # fixbow
 
-A bower.json file scrubber for the truly insane, based on [fixpack](https://github.com/HenrikJoreteg/fixpack) by Henrik Joreteg.
+A `bower.json` file scrubber.
 
-It will re-write your bower.json file as follows:
+Based on [fixpack](https://github.com/HenrikJoreteg/fixpack), a package.json file scrubber for the truly insane by Henrik Joreteg.
+
+It will re-write your [bower.json](https://github.com/bower/bower.json-spec) file as follows:
 
 - name first
 - description second
@@ -18,20 +20,18 @@ It will warn you if any of these are missing:
 - repository
 - keywords
 - main
-- bugs
+- ignore
 - homepage
 - license
 
 Fix all indenting to 2 spaces.
-
-Oh, and it will tolerate improperly quoted and comma'd JSON thanks to [ALCE](https://npmjs.org/package/alce).
 
 ## Usage
 
 1. Install it globally
 
 ```
-npm i -g fixbow
+npm install -g fixbow
 ```
 
 2. Run it in the same directory as your bower.json, that's it.
@@ -43,6 +43,10 @@ fixbow
 ## Changelog
 
 - 0.0.1 - Initial release
+
+## Credits
+
+Shamelessly adapted from [@HenrikJoreteg](https://twitter.com/HenrikJoreteg)'s [fixpack](https://github.com/HenrikJoreteg/fixpack) by [@mieky](https://twitter.com/mieky).
 
 ## License
 
