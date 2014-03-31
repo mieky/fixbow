@@ -2,14 +2,14 @@
 var fs = require('fs');
 var colors = require('colors');
 var required = ['name', 'version'];
-var warn = ['author', 'repository', 'keywords', 'main', 'bugs', 'homepage', 'license'];
+var warn = ['authors', 'repository', 'keywords', 'main', 'bugs', 'homepage', 'license'];
 var ALCE = require('alce');
 var os = require('os');
 
 
 function checkMissing(pack) {
     required.forEach(function (key) {
-        if (!pack[key]) throw new Error('package.json files must have a ' + key);
+        if (!pack[key]) throw new Error('bower.json files must have a ' + key);
     });
     warn.forEach(function (key) {
         if (!pack[key]) console.log(('missing ' + key).yellow);
@@ -24,9 +24,9 @@ function sortObjectKeysAlphabetically(object) {
     return sorted;
 }
 
-function fixPack() {
+function fixBow() {
     var out = {};
-    var file = process.cwd() + '/package.json';
+    var file = process.cwd() + '/bower.json';
     var pack = ALCE.parse(fs.readFileSync(file, {encoding: 'utf8'}));
     var key;
 
@@ -55,7 +55,7 @@ function fixPack() {
     // write it out
     fs.writeFileSync(file, JSON.stringify(out, null, 2) + os.EOL, {encoding: 'utf8'});
 
-    console.log('package.json'.bold + ' fixed'.green + '!');
+    console.log('bower.json'.bold + ' fixed'.green + '!');
 }
 
-fixPack();
+fixBow();

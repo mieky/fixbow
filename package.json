@@ -1,27 +1,27 @@
 {
-  "name": "fixpack",
-  "description": "cli tool that cleans up package.json files.",
-  "version": "0.0.2",
-  "author": "Henrik Joreteg <henrik@andyet.net>",
-  "bin": "./fixpack.js",
+  "name": "fixbow",
+  "description": "cli tool that cleans up bower.json files.",
+  "version": "0.0.1",
+  "author": "Mike Arvela <mike@arvela.net>",
+  "bin": "./fixbow.js",
   "bugs": {
-    "url": "https://github.com/henrikjoreteg/fixpack/issues"
+    "url": "https://github.com/mieky/fixbow/issues"
   },
   "dependencies": {
     "alce": "1.0.0",
     "colors": "*"
   },
-  "homepage": "https://github.com/henrikjoreteg/fixpack",
+  "homepage": "https://github.com/mieky/fixbow",
   "keywords": [
     "package",
     "cleanup"
   ],
   "license": "MIT",
-  "main": "fixpack.js",
+  "main": "fixbow.js",
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/henrikjoreteg/fixpack"
+    "url": "git://github.com/mieky/fixbow"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

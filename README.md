@@ -1,20 +1,20 @@
-# fixpack
+# fixbow
 
-A package.json file scrubber for the truly insane.
+A bower.json file scrubber for the truly insane, based on [fixpack](https://github.com/HenrikJoreteg/fixpack) by Henrik Joreteg.
 
-It will re-write your package.json file as follows:
+It will re-write your bower.json file as follows:
 
 - name first
 - description second
 - version third
-- author fourth
+- authors fourth
 - all other keys in alphabetical order
 - dependencies and devDependencies sorted alphabetically
 - append operating system appropriate newline at the end of the file
 
 It will warn you if any of these are missing:
 
-- author
+- authors
 - repository
 - keywords
 - main
@@ -28,32 +28,21 @@ Oh, and it will tolerate improperly quoted and comma'd JSON thanks to [ALCE](htt
 
 ## Usage
 
-1. install it globally
+1. Install it globally
 
 ```
-npm i -g fixpack
+npm i -g fixbow
 ```
 
-2. run it in the same directory as your package.json, that's it.
+2. Run it in the same directory as your bower.json, that's it.
 
 ```
-fixpack
-```
-
-## What you might do if you're clever
-
-```
-npm i cool_package --save && fixpack
+fixbow
 ```
 
 ## Changelog
 
-- 0.0.2 [diff](https://github.com/HenrikJoreteg/fixpack/compare/v0.0.1...v0.0.2) - EOF newline
-- 0.0.1 - initial release
-
-## Credits
-
-This embarrassing display of insanity, type-A-ness, and OCD brought to you by [@HenrikJoreteg](http://twitter.com/henrikjoreteg).
+- 0.0.1 - Initial release
 
 ## License
 
