@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var fs = require('fs');
 var colors = require('colors');
-var required = ['name', 'version'];
+var required = ['name'];
 var warn = ['authors', 'repository', 'keywords', 'main', 'ignore', 'homepage', 'license'];
 var ALCE = require('alce');
 var os = require('os');
